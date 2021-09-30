@@ -1,3 +1,7 @@
+# Abby Williams 
+# UMID: 96744717
+# Email: adwill@umich.edu
+# Worked with: Sarah Whitman, Lauren Fulcher 
 
 import unittest
 
@@ -171,7 +175,6 @@ class TestAllMethods(unittest.TestCase):
         self.assertTrue(c3.has_stall(self.s3))
         self.assertEqual(len(c3.directory), 3)
 
-
 	# Test that computed cost works properly.
     def test_compute_cost(self):
         #what's wrong with the following statements?
@@ -205,7 +208,6 @@ class TestAllMethods(unittest.TestCase):
         stall_item = self.s3.inventory['Taco']
         self.f1.validate_order(self.c2, self.s3, 'Taco', 4)
         self.assertEqual(stall_item - 4, self.s3.inventory['Taco'])
-        pass
 
     # Test if a customer can add money to their wallet
     def test_reload_money(self):
